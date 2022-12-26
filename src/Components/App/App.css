@@ -1,0 +1,185 @@
+/* ///////////// CONNECT 4 - HEADER CSS  ///////////// */
+
+/* CHANGES TITLE ANIMATION */
+.callout-title {
+  animation-delay: 0.1s;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.circles {
+  margin: -40px 0 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #000;
+  border-radius: 100px;
+  margin: 4px;
+}
+
+.red-sm {
+  background-color: red;
+}
+
+.black-sm {
+  background-color: black;
+}
+
+/* ///////////// CONNECT 4 - SCORE CSS  ///////////// */
+
+.score {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+/* ///////////// CONNECT 4 - BOARD CSS  ///////////// */
+
+td {
+  height: 80px;
+  width: 80px;
+  background-color: #1990ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 1px;
+}
+
+.board-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  font-weight: bold;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  padding: 0;
+  text-align: center;
+}
+
+.square:focus {
+  outline: none;
+  background: #ddd;
+}
+
+/* ///////////// CONNECT 4 - RESET/RESTART BUTTON  ///////////// */
+
+.restart {
+  margin: 40px auto;
+  font-size: 25px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+}
+
+/* ///////////// CONNECT 4 - MEDIA QUERY   ///////////// */
+
+@media (max-width: 700px) {
+  /* HEADER */
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* CIRCLES UNDER HEADER */
+  .circles {
+    margin: -20px 0 25px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .circle {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    margin: 3px;
+  }
+  
+  /* SCORE: RED/BLACK */
+  .score {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  /* TABLE-DATA FOR LINE-SPACING */
+  td {
+    height: 60px;
+    width: 60px;
+  }
+
+  /* EACH CHECKER SQUARE */
+  .square {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* RESTART BUTTON */
+  .restart {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 486px) {
+  /* HEADER */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  /* CIRCLES UNDER HEADER */
+  .circles {
+    margin: -20px 0 25px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .circle {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    margin: 3px;
+  }
+
+  /* SCORE: RED/BLACK */
+  .score {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  /* TABLE-DATA FOR LINE-SPACING */
+  td {
+    height: 40px;
+    width: 40px;
+  }
+  
+  /* EACH CHECKER SQUARE */
+  .square {
+    height: 35px;
+    width: 35px;
+  }
+
+  /* RESTART BUTTON */
+  .restart {
+    font-size: 16px;
+  }
+}
